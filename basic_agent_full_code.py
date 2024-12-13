@@ -267,7 +267,7 @@ def main():
     wedding_planner = NegotiationAgent('wedding_planner', planner_preferences)
 
     simulation = NegotiationSimulation(customer, wedding_planner)
-    final_agreement = simulation.run_negotiation()
+    simulation.run_negotiation()
 
     print("\n--- Negotiation History ---")
     for round_info in simulation.negotiation_history:
